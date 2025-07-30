@@ -7,8 +7,7 @@
 </head>
 <body>
     <h2>Info page</h2>
-    {{-- <p>{{ $greeting }}</p> --}}
-    {{-- <p>{{ $infos }}</p> --}}
+    <p>{{ $greeting }}</p>
     <ul>
         <li>Samun Here</li>
         <li>Omar Here</li>

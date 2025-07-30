@@ -13,7 +13,6 @@ Route::get('/getInfos', function(){
 //     ["name" => "luigi","skill" => 45, "id" => "2"],
 //   ];
 
-//     return view('infos.index', ["greeting" => "Salam", "infos" => $infos ]);
+    return view('infos.index', ["greeting" => "Salam");
 
-    return view('infos.index');
 });
