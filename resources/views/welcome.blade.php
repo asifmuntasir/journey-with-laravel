@@ -9,6 +9,6 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ut aut ex temporibus vel, optio illum culpa odio asperiores magnam velit.
     </p>
-    <a href="#">Click Here for Get out from here!</a>
+    <a href="/getInfos">Updated click to Get out from here!</a>
 </body>
 </html>
