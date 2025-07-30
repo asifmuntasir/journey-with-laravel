@@ -10,14 +10,14 @@
     <p>{{ $greeting }}</p>
     <ul>
         <li>
-            <a href="">
+            <a href="/getInfos/{{$infos[0]["id"]}}">
                 {{
                     $infos[0]["name"]
                 }}
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="/getInfos/{{$infos[1]["id"]}}">
                 {{
                     $infos[1]["name"]
                 }}

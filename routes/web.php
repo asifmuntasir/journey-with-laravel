@@ -16,3 +16,14 @@ Route::get('/getInfos', function(){
     return view('infos.index', ["greeting" => "Salam", "infos" => $infos]);
 
 });
+
+Route::get('/getInfos/{id}', function($id){
+
+//     $infos = [
+//     ["name" => "mario","skill" => 75, "id" => "1"],
+//     ["name" => "luigi","skill" => 45, "id" => "2"],
+//   ];
+
+    return view('infos.index', ["id" => $id]);
+
+});
