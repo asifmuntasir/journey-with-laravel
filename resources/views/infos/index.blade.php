@@ -9,8 +9,20 @@
     <h2>Info page</h2>
     <p>{{ $greeting }}</p>
     <ul>
-        <li>Samun Here</li>
-        <li>Omar Here</li>
+        <li>
+            <a href="">
+                {{
+                    $infos[0]["name"]
+                }}
+            </a>
+        </li>
+        <li>
+            <a href="">
+                {{
+                    $infos[1]["name"]
+                }}
+            </a>
+        </li>
         <li>Tufahel Here</li>
     </ul>
 </body>
