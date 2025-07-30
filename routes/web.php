@@ -24,6 +24,6 @@ Route::get('/getInfos/{id}', function($id){
 //     ["name" => "luigi","skill" => 45, "id" => "2"],
 //   ];
 
-    return view('infos.index', ["id" => $id]);
+    return view('infos.show', ["id" => $id]);
 
 });
