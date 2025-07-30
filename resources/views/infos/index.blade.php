@@ -9,12 +9,19 @@
     <h2>Info page</h2>
     <p>{{ $greeting }}</p>
     <ul>
-        <li>
+
+        @foreach($infos as $info)
+            <li>
+                <p>{{$info['name']}}</p>
+                <a href="/getInfos/{{$info['id']}}">View Details</a>
+            </li>
+        @endforeach
+        {{-- <li>
             <a href="/getInfos/{{$infos[0]["id"]}}">
-                {{
+        {{
                     $infos[0]["name"]
                 }}
-            </a>
+        </a>
         </li>
         <li>
             <a href="/getInfos/{{$infos[1]["id"]}}">
@@ -23,7 +30,7 @@
                 }}
             </a>
         </li>
-        <li>Tufahel Here</li>
+        <li>Tufahel Here</li> --}}
     </ul>
 </body>
 </html>
