@@ -7,11 +7,22 @@
 </head>
 <body>
     <h2>Info page</h2>
-    {{-- <p>{{ $greeting }}</p> --}}
-    {{-- <p>{{ $infos }}</p> --}}
+    <p>{{ $greeting }}</p>
     <ul>
-        <li>Samun Here</li>
-        <li>Omar Here</li>
+        <li>
+            <a href="/getInfos/{{$infos[0]["id"]}}">
+                {{
+                    $infos[0]["name"]
+                }}
+            </a>
+        </li>
+        <li>
+            <a href="/getInfos/{{$infos[1]["id"]}}">
+                {{
+                    $infos[1]["name"]
+                }}
+            </a>
+        </li>
         <li>Tufahel Here</li>
     </ul>
 </body>
