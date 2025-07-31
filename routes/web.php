@@ -17,6 +17,12 @@ Route::get('/getInfos', function(){
 
 });
 
+Route::get('/getInfos/create', function(){
+
+    return view('infos.create');
+
+});
+
 Route::get('/getInfos/{id}', function($id){
 
 //     $infos = [
@@ -27,3 +33,4 @@ Route::get('/getInfos/{id}', function($id){
     return view('infos.show', ["id" => $id]);
 
 });
+
