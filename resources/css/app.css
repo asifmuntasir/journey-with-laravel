@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -8,4 +8,117 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* If using Tailwind via CDN, remove @tailwind directives. If using PostCSS, ensure Tailwind is configured. */
+/* need PostCSS Language Support to remove warnings */
+
+body {
+  background-color: #f3f4f6; /* Tailwind bg-gray-100 */
+  color: #374151; /* Tailwind text-gray-700 */
+  font-family: "Rubik";
+}
+h1 {
+  font-size: 1.5rem; /* Tailwind text-2xl */
+  font-weight: 700;   /* Tailwind font-bold */
+  color: #ef4444;     /* Tailwind text-red-500 */
+}
+h2 {
+  font-size: 1.25rem; /* Tailwind text-xl */
+  font-weight: 700;   /* Tailwind font-bold */
+  margin-top: 1rem;   /* Tailwind my-4 */
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.125rem; /* Tailwind text-lg */
+  font-weight: 700;    /* Tailwind font-bold */
+  margin-top: 1rem;    /* Tailwind my-4 */
+  margin-bottom: 1rem;
+}
+ul {
+  margin-top: 2.5rem;  /* Tailwind my-10 */
+  margin-bottom: 2.5rem;
+}
+p {
+  margin-top: 0.5rem;  /* Tailwind my-2 */
+  margin-bottom: 0.5rem;
+}
+
+/* header */
+header {
+  background-color: #fff; /* Tailwind bg-white */
+
+  nav {
+    display: flex; /* Tailwind flex */
+    align-items: center; /* Tailwind items-center */
+    gap: 1.25rem; /* Tailwind gap-5 */
+    max-width: 1024px; /* Tailwind max-w-screen-lg */
+    padding-left: 3rem; /* Tailwind px-12 */
+    padding-right: 3rem;
+    padding-top: 1rem; /* Tailwind py-4 */
+    padding-bottom: 1rem;
+    margin-left: auto; /* Tailwind mx-auto */
+    margin-right: auto;
+  }
+  h1 {
+    margin-right: auto; /* Tailwind mr-auto */
+  }
+}
+
+/* form elements */
+form {
+  max-width: 640px; /* Tailwind max-w-screen-sm */
+  margin-left: auto;
+  margin-right: auto;
+}
+input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;   /* Tailwind mt-2 */
+  margin-bottom: 1rem;  /* Tailwind mb-4 */
+  padding: 0.5rem;      /* Tailwind p-2 */
+}
+
+/* custom classes */
+.container {
+  max-width: 1024px; /* Tailwind max-w-screen-lg */
+  margin: auto; /* Tailwind mx-auto */
+}
+
+/* Card styles */
+.card {
+  background-color: #fff; /* Tailwind bg-white */
+  border-radius: 0.5rem; /* Tailwind rounded */
+  border: 1px solid #e5e7eb; /* Tailwind border border-gray-200 */
+  padding-left: 0.75rem; /* Tailwind px-3 */
+  padding-right: 0.75rem;
+  padding-top: 0.75rem; /* Tailwind py-3 */
+  padding-bottom: 0.75rem;
+  margin-top: 0.5rem; /* Tailwind my-2 */
+  margin-bottom: 0.5rem;
+  display: flex; /* Tailwind flex */
+  justify-content: space-between; /* Tailwind justify-between */
+  align-items: center; /* Tailwind items-center */
+}
+
+/* Highlight styles */
+.highlight {
+  border-left-width: 4px; /* Tailwind border-l-4 */
+  border-left-color: #ef4444; /* Tailwind border-l-red-500 */
+}
+
+/* Button styles */
+.btn {
+  border-radius: 0.5rem; /* Tailwind rounded */
+  padding-left: 0.75rem; /* Tailwind px-3 */
+  padding-right: 0.75rem;
+  padding-top: 0.5rem; /* Tailwind py-2 */
+  padding-bottom: 0.5rem;
+  background-color: #e5e7eb; /* Tailwind bg-gray-200 */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background-color: #ef4444; /* Tailwind hover:bg-red-500 */
+  color: #fff; /* Tailwind hover:text-white */
 }
